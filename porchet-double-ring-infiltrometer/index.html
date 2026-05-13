@@ -116,6 +116,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -184,7 +213,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="section"><h2>Relevant standards</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<p>ASTM D3385-18: Standard Test Method for Infiltration Rate of Soils in Field Using Double-Ring Infiltrometer, ASTM D2434-19: Standard Test Method for Permeability of Granular Soils (Constant Head), IBC 2021 Chapter 18: Soils and Foundations, Section 1803.5.10: Infiltration testing</p></section>
+<p>ASTM D3385-18: Standard Test Method for Infiltration Rate of Soils in Field Using Double-Ring Infiltrometer, ASTM D2434-19: Standard Test Method for Permeability of Granular Soils (Constant Head), IBC 2021 Chapter 18: Soils and <a href="/foundations/">Foundations</a>, Section 1803.5.10: Infiltration testing</p></section>
 
 <section class="section"><h2>Quick answers</h2><details><summary>How long does an infiltration test take in San Bernardino?</summary><p>Typically 2 to 6 hours per test point. Sandy soils on the alluvial fans can be done in under 3 hours. Clayey terrace soils near the Santa Ana River may need up to 6 hours to reach steady-state flow. We schedule morning starts to avoid afternoon heat.</p></details><details><summary>What is the difference between double-ring and Porchet methods?</summary><p>The double-ring infiltrometer uses two concentric rings to isolate vertical flow and minimize lateral spreading. The Porchet method uses a single ring and is simpler, but it can overestimate Ksat in layered soils. We choose based on site conditions and project requirements.</p></details><details><summary>Does the infiltration test need to be done before or after grading?</summary><p>Before grading is ideal, because the natural soil structure and crust are undisturbed. If grading has already cut or filled the site, we test in the proposed finished grade elevation. We note the disturbance in the report.</p></details><details><summary>How much does an infiltration test cost in San Bernardino?</summary><p>The typical range is between US$320 and US$440 per test point. Volume discounts apply for multi-point testing on large sites. The final quote depends on depth, access, and number of locations.</p></details></section>
 

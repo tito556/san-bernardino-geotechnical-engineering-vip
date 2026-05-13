@@ -116,6 +116,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -184,7 +213,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="section"><h2>Relevant standards</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<p>ASTM D2435-11: Standard Test Methods for One-Dimensional Consolidation Properties of Soils, ASTM D2487-17: Standard Practice for Classification of Soils for Engineering Purposes, IBC 2021 Chapter 18: Soils and Foundations, ASCE 7-22: Minimum Design Loads and Associated Criteria for Buildings</p></section>
+<p>ASTM D2435-11: Standard Test Methods for One-Dimensional Consolidation Properties of Soils, ASTM D2487-17: Standard Practice for Classification of Soils for Engineering Purposes, IBC 2021 Chapter 18: Soils and <a href="/foundations/">Foundations</a>, ASCE 7-22: Minimum Design Loads and Associated Criteria for Buildings</p></section>
 
 <section class="section"><h2>Quick answers</h2><details><summary>How does the oedometer consolidation test differ from a simple settlement calculation?</summary><p>The oedometer test measures actual soil compressibility parameters — Cc, Cr, and preconsolidation pressure — from undisturbed samples. A simple calculation uses assumed values that may not reflect San Bernardino's variable alluvium. The test gives you site-specific numbers that reduce guesswork and liability.</p></details><details><summary>What is the typical turnaround time for oedometer consolidation test results in San Bernardino?</summary><p>A standard test with one loading cycle takes about 7 to 10 business days from sample receipt, depending on the number of load increments. Each load step requires 24 hours of monitoring. For urgent projects, we can run a reduced-load schedule with 4 to 6 increments, cutting turnaround to 5 days.</p></details><details><summary>How much does an oedometer consolidation test cost in San Bernardino?</summary><p>The cost typically ranges between US$210 and US$490 per sample, depending on the number of load increments and whether rebound/reload cycles are included. Bulk testing for large developments may qualify for a volume discount. Contact us for a quote tailored to your project scope.</p></details></section>
 

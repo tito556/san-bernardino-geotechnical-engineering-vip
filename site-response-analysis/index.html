@@ -116,6 +116,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -184,7 +213,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="section"><h2>Relevant standards</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<p>ASCE 7-22 (Minimum Design Loads and Associated Criteria for Buildings and Other Structures), NEHRP Recommended Seismic Provisions (FEMA P-1050), ASTM D4428/D4428M (Crosshole Seismic Testing), ASTM D7400 (MASW for Shear Wave Velocity)</p></section>
+<p>ASCE 7-22 (Minimum Design Loads and Associated Criteria for Buildings and Other Structures), NEHRP Recommended <a href="/seismic/">Seismic</a> Provisions (FEMA P-1050), ASTM D4428/D4428M (Crosshole Seismic Testing), ASTM D7400 (MASW for Shear Wave Velocity)</p></section>
 
 <section class="section"><h2>Quick answers</h2><details><summary>How does a site response analysis differ from a standard seismic hazard assessment?</summary><p>A standard seismic hazard assessment provides peak ground acceleration (PGA) at the bedrock level from regional faults. A site response <a href="../foundations-fill/" data-interlink="1">analysis</a> propagates those motions through the local soil column to compute surface-level response spectra that account for soil amplification, resonance, and nonlinear effects. In San Bernardino alluvial deposits, this can amplify spectral accelerations by a factor of 2 to 3 at certain periods.</p></details><details><summary>What is the typical cost range for a site response analysis in San Bernardino?</summary><p>For a standard site response <a href="../foundations-fill/" data-interlink="1">analysis</a> including field Vs30 measurements, laboratory dynamic testing, and 1D equivalent-linear modeling, costs typically range between US$1,160 and US$3,650 depending on the number of input motions and complexity of the soil profile. Larger projects with multiple boring locations and 2D analyses fall at the higher end of this range.</p></details><details><summary>Is site response analysis required for all new construction in San Bernardino?</summary><p>The San Bernardino Municipal Code and California Building Code (CBC) reference ASCE 7-22 which mandates a site-specific ground motion hazard <a href="../foundations-fill/" data-interlink="1">analysis</a> for Seismic Design Categories D, E, and F. Most commercial and multi-family buildings in San Bernardino fall under SDC D due to proximity to the San Andreas fault. A site response analysis is the standard method to develop the design response spectrum.</p></details><details><summary>How do you determine the input ground motions for the analysis?</summary><p>Input motions are selected from the PEER NGA-West2 database using magnitude-distance deaggregation for the San Bernardino site. We typically use 11 to 22 spectrum-compatible motions scaled to the MCE_R level. For near-fault sites, directivity pulses are included in the selection. The motions are then applied as vertically propagating shear waves in the 1D soil column model.</p></details></section>
 

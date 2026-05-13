@@ -116,6 +116,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -186,7 +215,7 @@ header.hero, .hero { position: relative !important; }
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <p>ASTM D5333-03 (Collapse Potential of Soils), ASTM D2435 (One-Dimensional Consolidation Properties), IBC Section 1803 – Geotechnical Investigation Requirements</p></section>
 
-<section class="section"><h2>Quick answers</h2><details><summary>What is collapsible soil and why is it a problem in San Bernardino?</summary><p>Collapsible soil has a loose, honeycomb structure that supports load when dry but undergoes sudden settlement when wetted. In San Bernardino, the alluvial fan deposits from the San Gabriel and San Bernardino Mountains often have this metastable fabric, especially in older terraces and dry washes.</p></details><details><summary>How much does a collapsible soil evaluation typically cost in San Bernardino?</summary><p>For a standard residential lot, expect between US$840 and US$2,520 depending on the number of test pits, undisturbed samples, and lab collapse tests. Larger commercial sites with deeper boring requirements fall at the higher end of that range.</p></details><details><summary>Which ASTM standard governs the collapse test procedure?</summary><p>ASTM D5333-03 is the primary standard for measuring collapse potential of soils. It specifies the double-oedometer method, sample preparation, and calculation of the collapse index. We also reference ASTM D2435 for consolidation properties and IBC Section 1803 for investigation requirements.</p></details><details><summary>Can I build on collapsible soil without treating it first?</summary><p>Technically yes, but it's risky. If the collapse potential is moderate (Ic > 1%), shallow foundations may experience differential settlement after the first wet season. Typical mitigation includes deep compaction, pre-wetting, or using a stiffened raft foundation. Our evaluation report will include specific recommendations based on your site's collapse index.</p></details><details><summary>How deep should I sample to assess collapsible soil in San Bernardino?</summary><p>We recommend sampling to at least the depth of influence of the foundation load, typically 10 to 20 feet for a one-story residence. In San Bernardino's alluvial fans, the metastable zone can extend deeper, and we often extend borings to 30 feet for commercial structures to capture the full collapse-prone profile.</p></details></section>
+<section class="section"><h2>Quick answers</h2><details><summary>What is collapsible soil and why is it a problem in San Bernardino?</summary><p>Collapsible soil has a loose, honeycomb structure that supports load when dry but undergoes sudden settlement when wetted. In San Bernardino, the alluvial fan deposits from the San Gabriel and San Bernardino Mountains often have this metastable fabric, especially in older terraces and dry washes.</p></details><details><summary>How much does a collapsible soil evaluation typically cost in San Bernardino?</summary><p>For a standard residential lot, expect between US$840 and US$2,520 depending on the number of test pits, undisturbed samples, and lab collapse tests. Larger commercial sites with deeper boring requirements fall at the higher end of that range.</p></details><details><summary>Which ASTM standard governs the collapse test procedure?</summary><p>ASTM D5333-03 is the primary standard for measuring collapse potential of soils. It specifies the double-oedometer method, sample preparation, and calculation of the collapse index. We also reference ASTM D2435 for consolidation properties and IBC Section 1803 for investigation requirements.</p></details><details><summary>Can I build on collapsible soil without treating it first?</summary><p>Technically yes, but it's risky. If the collapse potential is moderate (Ic > 1%), shallow <a href="/foundations/">foundations</a> may experience differential settlement after the first wet season. Typical mitigation includes deep compaction, pre-wetting, or using a stiffened raft foundation. Our evaluation report will include specific recommendations based on your site's collapse index.</p></details><details><summary>How deep should I sample to assess collapsible soil in San Bernardino?</summary><p>We recommend sampling to at least the depth of influence of the foundation load, typically 10 to 20 feet for a one-story residence. In San Bernardino's alluvial fans, the metastable zone can extend deeper, and we often extend borings to 30 feet for commercial structures to capture the full collapse-prone profile.</p></details></section>
 
 
 

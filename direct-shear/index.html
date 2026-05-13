@@ -116,6 +116,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -141,7 +170,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="section"><h2>Approach and scope</h2><div>Our direct shear test in San Bernardino uses a Wykeham Farrance shear machine with a 60 mm square shear box, instrumented with a proving ring and two LVDTs for horizontal and vertical displacement. We apply normal stresses of 50, 100, and 200 kPa to simulate the range of overburden pressures typical for residential and light commercial projects in the city. Each specimen is sheared at a controlled rate of 0.5 mm/min under drained conditions, per ASTM D3080-18. The lab technician records peak and residual shear stress, then plots the Mohr-Coulomb envelope to extract cohesion and friction angle. We complement this data with a <a href="../unconfined-compression/">compression test on undisturbed samples</a> for projects requiring unconfined strength of cohesive layers.</div></section><section class="section"><h2>Site-specific factors</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<p>In the Verdemont neighborhood, soils transition from well-graded sands to silty clays within 3 meters, while near the Santa Ana River corridor loose sandy deposits dominate. The direct shear test reveals that cohesion in these silty clays can drop by 40% when saturated, a risk that shallow foundations and slab-on-grade designs must account for. Ignoring this variation leads to differential settlement and slope instability along the foothills. Our testing isolates the critical failure envelope for each stratum, giving the structural engineer a defensible design parameter for San Bernardino's complex alluvial stratigraphy.</p></section>
+<p>In the Verdemont neighborhood, soils transition from well-graded sands to silty clays within 3 meters, while near the Santa Ana River corridor loose sandy deposits dominate. The direct shear test reveals that cohesion in these silty clays can drop by 40% when saturated, a risk that shallow <a href="/foundations/">foundations</a> and slab-on-grade designs must account for. Ignoring this variation leads to differential settlement and slope instability along the foothills. Our testing isolates the critical failure envelope for each stratum, giving the structural engineer a defensible design parameter for San Bernardino's complex alluvial stratigraphy.</p></section>
 
 
     <section class="block mid-cta-9b71" style="padding:2rem 0">

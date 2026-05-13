@@ -116,6 +116,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -147,7 +176,7 @@ header.hero, .hero { position: relative !important; }
           <figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference image — San Bernardino</figcaption>
         </figure>
       </div>
-    </section><section class="section"><h2>Site-specific factors</h2><p>ASCE 7-22 requires consideration of liquefaction and differential settlement for sites in seismic zones. San Bernardino falls within Seismic Design Category D. Uncontrolled grouting can fracture fine-grained layers and create weak planes. The risk is real — a poorly designed injection program may push water into adjacent utility corridors or lift existing foundations. We follow ASTM D5092 for groundwater monitoring during injection and use pressure transducers to detect any abnormal rise. The biggest hazard in San Bernardino is the presence of undocumented fill and old stream channels. Without a proper grouting design, these zones will not densify uniformly.</p></section>
+    </section><section class="section"><h2>Site-specific factors</h2><p>ASCE 7-22 requires consideration of liquefaction and differential settlement for sites in seismic zones. San Bernardino falls within Seismic Design Category D. Uncontrolled grouting can fracture fine-grained layers and create weak planes. The risk is real — a poorly designed injection program may push water into adjacent utility corridors or lift existing foundations. We follow ASTM D5092 for groundwater monitoring during injection and use pressure transducers to detect any abnormal rise. The biggest hazard in San Bernardino is the presence of undocumented fill and old stream channels. Without a proper <a href="/jet-grouting-design/">grouting design</a>, these zones will not densify uniformly.</p></section>
 
 
     <section class="block mid-cta-9b71" style="padding:2rem 0">

@@ -116,6 +116,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -135,7 +164,7 @@ header.hero, .hero { position: relative !important; }
     <a class="hero-cta" href="#main-content">DETAILS →</a>
 </div></header>
 
-<section id="main-content" class="section"><p>San Bernardino sits on deep alluvial deposits from the Santa Ana River watershed, with soil profiles that shift from dense sands and gravels near the canyon mouths to interbedded silts and clays toward the valley floor. Groundwater is typically 20 to 50 feet deep in most parts of the city, but rises seasonally near the river corridor. These conditions demand a thorough driven pile design approach, because end-bearing and skin friction vary dramatically across short distances. We combine SPT data with laboratory index testing to classify each stratum and assign shaft resistance values per FHWA method. A proper estudio de mecánica de suelos is the starting point for any deep foundation project in the Inland Empire.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="/img/pilotes-hincados-2.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Driven pile design in San Bernardino" style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure><blockquote style="border-left:4px solid #A78BFA;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">In San Bernardino, the transition from alluvial sand to ancient lakebed clay can happen within 15 feet of depth — your pile capacity model must account for both.</blockquote></section>
+<section id="main-content" class="section"><p>San Bernardino sits on deep alluvial deposits from the Santa Ana River watershed, with soil profiles that shift from dense sands and gravels near the canyon mouths to interbedded silts and clays toward the valley floor. Groundwater is typically 20 to 50 feet deep in most parts of the city, but rises seasonally near the river corridor. These conditions demand a thorough driven pile design approach, because end-bearing and skin friction vary dramatically across short distances. We combine SPT data with <a href="/laboratory/">laboratory</a> index testing to classify each stratum and assign shaft resistance values per FHWA method. A proper estudio de mecánica de suelos is the starting point for any deep foundation project in the Inland Empire.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="/img/pilotes-hincados-2.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Driven pile design in San Bernardino" style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure><blockquote style="border-left:4px solid #A78BFA;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">In San Bernardino, the transition from alluvial sand to ancient lakebed clay can happen within 15 feet of depth — your pile capacity model must account for both.</blockquote></section>
 
 
 

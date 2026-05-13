@@ -116,6 +116,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -184,7 +213,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="section"><h2>Relevant standards</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<p>ASCE 7-22 (seismic & wind loads), IBC 2021 (Chapter 18: Soils & Foundations), ACI 318-19 (reinforced concrete design for deep foundations), ASTM D1196-21 (plate load test for modulus of subgrade reaction)</p></section>
+<p>ASCE 7-22 (seismic & wind loads), IBC 2021 (Chapter 18: Soils & <a href="/foundations/">Foundations</a>), ACI 318-19 (reinforced concrete design for deep foundations), ASTM D1196-21 (plate load test for modulus of subgrade reaction)</p></section>
 
 <section class="section"><h2>Quick answers</h2><details><summary>What is the typical cost range for a raft/mat foundation design in San Bernardino?</summary><p>A full geotechnical investigation plus structural design for a residential or light commercial mat runs between US$940 and US$4,080, depending on site complexity, number of borings, and laboratory testing volume.</p></details><details><summary>How does the San Andreas fault affect mat foundation design in San Bernardino?</summary><p>The fault generates high seismic accelerations (0.6g+). Our mat designs include thicker edges, post-tensioning, and liquefaction-mitigation layers like stone columns or deep soil mixing to limit differential settlement.</p></details><details><summary>When is a raft foundation better than spread footings in San Bernardino?</summary><p>A mat is preferable when soil bearing capacity is low (under 2,500 psf), groundwater is shallow, or the building has heavy column loads. It also helps on sites with variable fill or collapsible soils common near old river channels.</p></details><details><summary>What soil tests are required before designing a mat foundation in San Bernardino?</summary><p>Minimum requirements: SPT borings every 75 ft, undisturbed samples for consolidation and <a href="../triaxial/" data-interlink="1">triaxial tests</a>, and a groundwater monitoring well. For seismic sites, we also run cyclic triaxial or resonant column tests to evaluate modulus reduction curves.</p></details></section>
 

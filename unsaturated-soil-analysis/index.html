@@ -116,6 +116,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -184,7 +213,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="section"><h2>Relevant standards</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<p>ASTM D6836 (SWCC), ASTM D5298 (filter paper method for suction), ASTM D4767 (consolidated undrained triaxial with pore pressure)</p></section>
+<p>ASTM D6836 (SWCC), ASTM D5298 (filter paper method for suction), ASTM D4767 (consolidated undrained <a href="/triaxial/">triaxial</a> with pore pressure)</p></section>
 
 <section class="section"><h2>Quick answers</h2><details><summary>What is unsaturated soil analysis and why does it matter in San Bernardino?</summary><p>The reference range for this service in San Bernardino is US$1.060 - US$2.730. The final price depends on the project scope and volume.</p></details><details><summary>Which ASTM standards apply to unsaturated soil testing?</summary><p>ASTM D6836 covers SWCC measurement, ASTM D5298 covers filter-paper suction, and ASTM D4767 covers triaxial testing with pore-pressure control. For collapse potential we follow ASTM D5333.</p></details><details><summary>How long does a typical unsaturated soil analysis take?</summary><p>A full suite — SWCC, unsaturated triaxial, and collapse tests — typically takes 4 to 8 weeks. The SWCC alone requires 2 to 4 weeks due to the slow equilibration time in low-permeability clays.</p></details><details><summary>What is the difference between saturated and unsaturated shear strength?</summary><p>Unsaturated soils have additional apparent cohesion from matric suction. This can increase peak strength by 30% or more in dry conditions, but vanishes upon wetting — exactly the scenario that triggers failure in San Bernardino's alluvial slopes.</p></details><details><summary>How much does unsaturated soil analysis cost in San Bernardino?</summary><p>The typical range for a complete <a href="../foundations-fill/" data-interlink="1">analysis</a> including SWCC, triaxial, and collapse tests is between US$1,060 and US$2,730, depending on sample quantity and suction range required. Contact us for a quote tailored to your project scope.</p></details></section>
 

@@ -116,6 +116,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -177,7 +206,7 @@ header.hero, .hero { position: relative !important; }
       <div style="max-width:1200px;margin:0 auto">
         <h2 style="margin-bottom:1.5rem;font-weight:700">Related technical services</h2>
         <div class="sub-svc-grid-9b71">
-          <div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Subsurface Exploration & Soil Classification</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Boreholes, test pits, and SPT sampling to classify soils per ASTM D2487. We identify collapsible sands and expansive clays that affect embankment performance in San Bernardino's alluvial environment.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Compaction Testing & Moisture Control</h3><p style="color:#333;line-height:1.65;font-size:.93rem"><a href="../field-density/" data-interlink="1">Field density tests</a> using nuclear gauge and <a href="../field-density/" data-interlink="1">sand cone methods</a>, plus laboratory Proctor curves. We adjust moisture targets based on the seasonal climate to avoid over-drying or saturating lifts during placement.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">03</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Slope Stability Analysis & Seismic Design</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Limit equilibrium and finite element analyses for static and pseudo-static conditions. We model the embankment geometry against San Bernardino's design earthquake (MCE = 0.75g) to verify factors of safety above 1.5.</p></div>
+          <div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Subsurface Exploration & Soil Classification</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Boreholes, test pits, and SPT sampling to classify soils per ASTM D2487. We identify collapsible sands and expansive clays that affect embankment performance in San Bernardino's alluvial environment.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Compaction Testing & Moisture Control</h3><p style="color:#333;line-height:1.65;font-size:.93rem"><a href="../field-density/" data-interlink="1">Field density tests</a> using nuclear gauge and <a href="../field-density/" data-interlink="1">sand cone methods</a>, plus laboratory Proctor curves. We adjust moisture targets based on the seasonal climate to avoid over-drying or saturating lifts during placement.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">03</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Slope Stability Analysis & Seismic Design</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Limit equilibrium and finite element analyses for static and pseudo-static conditions. We model the embankment geometry against San Bernardino's design earthquake (MCE = 0.75g) to verify <a href="/factor-safety/">factors of safety</a> above 1.5.</p></div>
         </div>
       </div>
     </section>

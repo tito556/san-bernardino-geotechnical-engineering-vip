@@ -116,6 +116,35 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#2A9D8F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -184,7 +213,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="section"><h2>Relevant standards</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<p>ASTM D1556-21 (Standard Test Method for Density and Unit Weight of Soil in Place by Sand-Cone Method), AASHTO T-191 (Density of Soil In-Place by the Sand-Cone Method), IBC 2021 Chapter 18 (Soils and Foundations)</p></section>
+<p>ASTM D1556-21 (Standard Test Method for Density and Unit Weight of Soil in Place by Sand-Cone Method), AASHTO T-191 (Density of Soil In-Place by the Sand-Cone Method), IBC 2021 Chapter 18 (Soils and <a href="/foundations/">Foundations</a>)</p></section>
 
 <section class="section"><h2>Quick answers</h2><details><summary>How much does a field density test (sand cone) cost in San Bernardino?</summary><p>The typical cost for a single sand cone density test in San Bernardino ranges between US$110 and US$170 per test point. This includes excavation, sand cone volume measurement, moisture content determination, and a report with density vs. Proctor comparison. Volume discounts apply for projects requiring 10 or more test points.</p></details><details><summary>What compaction percentage is typically required for structural fills in San Bernardino?</summary><p>Most building permits in San Bernardino require a minimum of 95% relative compaction per ASTM D698 (Standard Proctor) for structural fills, with 90% for non-structural areas. The specific requirement depends on the site's geotechnical report and the IBC 2021 Chapter 18 criteria adopted by the city.</p></details><details><summary>Can the sand cone test be used on fills containing gravel or cobbles?</summary><p>The sand cone method is suitable for soils with particles up to approximately 2 inches (50 mm) in diameter. For fills with larger cobbles or significant oversize content, the test hole may collapse or the sand volume measurement becomes unreliable. In those cases, we recommend the rubber balloon method (ASTM D2167) or a nuclear gauge with proper correlation.</p></details></section>
 
